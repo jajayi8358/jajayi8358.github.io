@@ -1,0 +1,112 @@
+/* background colour is applied to the bodytag*/
+/* this is an example of a type selector */
+body{
+    
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    font-size: 1.5vw
+}
+
+#logo{
+    margin: 0px;
+    padding: 10px;
+    font-family: "Fredoka One", sans-serif;
+    width: 22%;
+
+}
+
+ul{
+    margin: 0px;
+}
+
+/* selecting a child of that element */
+body >header {
+    background-color:rgb(192,192, 192) ;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#nav-ul{
+    display: flex;
+}
+
+#nav-ul>li{
+    padding: 5px;
+    margin: 10px;
+}
+
+/* /* the removal of the bullets points */
+
+body > header > nav > ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* created a class for the navigation button to apply a style to it, the style applied is the removal and the "link effect" from it and making the text white  */
+.navbtn{  
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid white ;
+    border-radius: 50%;
+}
+
+
+/* This CSS is for the main content moving the article tag and the side next to eacxh other*/
+/* this is automatically alligns the everthing that between the article tags in to the centre */
+
+body > main article {
+    width: 70%;
+    margin: auto;
+}
+
+h2{text-align: center;
+
+}
+
+form{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content> div {
+    width: 70%;
+
+}
+/* FOOTER DESIGN  */
+
+
+body > footer{
+    background-color:rgb(192,192, 192) ;
+    color: whitesmoke;
+    display: flex;
+}
+
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+}
+    
+#footer-ul> div> li{
+    margin-left: 15px;
+}
+    
+#footer-ul> div> li> a {
+    text-decoration: none;
+    color: white
+
+}
+
+
