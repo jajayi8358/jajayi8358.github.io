@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #f5f7fa;
-    color: #333;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
@@ -16,19 +16,19 @@ body {
 }
 
 a {
-    color: #0077b6;
+    color: #bb86fc; /* Light purple */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0096c7;
+    color: #3700b3; /* Darker purple */
 }
 
 /* Header Styling */
 header {
-    background-color: #0077b6;
-    color: white;
+    background-color: #1f1f1f; /* Dark header */
+    color: #e0e0e0; /* Light text */
     padding: 20px 0;
     text-align: center;
 }
@@ -47,7 +47,7 @@ nav ul {
 
 nav ul li a {
     font-size: 1.2rem;
-    color: white;
+    color: #e0e0e0; /* Light text */
     padding: 10px 20px;
     border-radius: 30px;
     background-color: transparent;
@@ -55,8 +55,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0096c7;
-    color: #fff;
+    background-color: #bb86fc; /* Light purple */
+    color: #121212; /* Dark text */
 }
 
 /* Main Content */
@@ -70,8 +70,8 @@ nav ul li a:hover {
 aside {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e; /* Dark aside background */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -79,7 +79,7 @@ aside {
 aside h4 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: #0096c7;
+    color: #bb86fc; /* Light purple */
 }
 
 aside ul {
@@ -92,26 +92,26 @@ aside ul li {
 }
 
 aside ul li a {
-    color: #0077b6;
+    color: #e0e0e0; /* Light text */
     text-decoration: none;
 }
 
 article {
     flex: 3;
-    background-color: #fff;
+    background-color: #1e1e1e; /* Dark article background */
     padding: 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
 article header h2 {
     font-size: 2rem;
-    color: #0077b6;
+    color: #bb86fc; /* Light purple */
     margin-bottom: 10px;
 }
 
 article header h3 {
-    color: #0096c7;
+    color: #3700b3; /* Darker purple */
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
@@ -119,7 +119,7 @@ article header h3 {
 article p {
     font-size: 1.1rem;
     margin-bottom: 15px;
-    color: #444;
+    color: #e0e0e0; /* Light text */
 }
 
 ol {
@@ -132,14 +132,15 @@ ol li {
 }
 
 blockquote {
-    background-color: #e0f7fa;
+    background-color: #bb86fc; /* Light purple */
+    color: #121212; /* Dark text */
     padding: 20px;
-    border-left: 5px solid #0077b6;
+    border-left: 5px solid #3700b3; /* Darker purple */
     margin-top: 20px;
 }
 
 blockquote cite {
-    color: #333;
+    color: #e0e0e0; /* Light text */
     font-style: italic;
 }
 
@@ -153,16 +154,16 @@ footer img {
 
 /* Newsletter Form */
 form {
-    background-color: #ffffff;
+    background-color: #1e1e1e; /* Dark form background */
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 form label {
     font-weight: bold;
-    color: #0096c7;
+    color: #bb86fc; /* Light purple */
     margin-bottom: 10px;
 }
 
@@ -173,9 +174,10 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Dark border */
     border-radius: 5px;
-    font-size: 1rem;
+    background-color: #121212; /* Dark input background */
+    color: #e0e0e0; /* Light text */
 }
 
 form input[type="radio"] {
@@ -187,8 +189,8 @@ form input[type="checkbox"] {
 }
 
 form input[type="submit"] {
-    background-color: #0077b6;
-    color: white;
+    background-color: #3700b3; /* Dark purple */
+    color: #e0e0e0; /* Light text */
     padding: 10px 20px;
     border: none;
     border-radius: 30px;
@@ -197,16 +199,16 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #0096c7;
+    background-color: #bb86fc; /* Light purple */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #f0f0f0;
+    background-color: #1f1f1f; /* Dark footer */
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #444; /* Darker border */
 }
 
 footer ul {
@@ -219,12 +221,12 @@ footer ul {
 
 footer ul li a {
     font-size: 1rem;
-    color: #0077b6;
+    color: #bb86fc; /* Light purple */
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #0096c7;
+    color: #3700b3; /* Darker purple */
 }
 
 /* Responsiveness */
