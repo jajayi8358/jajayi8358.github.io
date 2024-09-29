@@ -1,265 +1,128 @@
-/* General Style */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fredoka One', sans-serif;
-}
-
+/* General Styles */
 body {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
-    font-size: 18px;
-    line-height: 1.6;
+    background-color: #1c1c1c; /* Dark background */
+    font-family: 'Fredoka One', cursive; /* Fun font */
+    color: #e0e0e0; /* Light text for contrast */
     margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d2d2d; /* Slightly lighter dark for header */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1#logo {
+    font-size: 2.5em;
+    text-align: center;
+    color: #f39c12; /* Golden accent for the logo */
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
-a {
-    color: #bb86fc; /* Light purple */
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav a {
     text-decoration: none;
+    color: #f5f5f5; /* Light color for nav links */
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #3700b3; /* Darker purple */
+nav a:hover {
+    color: #f39c12; /* Highlight color on hover */
 }
 
-/* Header Styling */
-header {
-    background-color: #1f1f1f; /* Dark header */
-    color: #e0e0e0; /* Light text */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1#logo {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
+/* Main Content Styles */
+main {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav ul li a {
-    font-size: 1.2rem;
-    color: #e0e0e0; /* Light text */
-    padding: 10px 20px;
-    border-radius: 30px;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #bb86fc; /* Light purple */
-    color: #121212; /* Dark text */
-}
-
-/* Main Content */
-#main-content {
-    display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-aside {
-    flex: 1;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #1e1e1e; /* Dark aside background */
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-aside h4 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #bb86fc; /* Light purple */
-}
-
-aside ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-aside ul li {
-    margin-bottom: 10px;
-}
-
-aside ul li a {
-    color: #e0e0e0; /* Light text */
-    text-decoration: none;
 }
 
 article {
     flex: 3;
-    background-color: #1e1e1e; /* Dark article background */
-    padding: 40px;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #3b3b3b; /* Darker article background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 article header h2 {
-    font-size: 2rem;
-    color: #bb86fc; /* Light purple */
-    margin-bottom: 10px;
+    font-size: 2em; /* Increased font size for article title */
+    color: #f39c12; /* Gold color for titles */
 }
 
-article header h3 {
-    color: #3700b3; /* Darker purple */
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-article p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #e0e0e0; /* Light text */
-}
-
-ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-ol li {
-    margin-bottom: 10px;
+article h3 {
+    color: #f5f5f5; /* Subtle color for read time */
 }
 
 blockquote {
-    background-color: #bb86fc; /* Light purple */
-    color: #121212; /* Dark text */
-    padding: 20px;
-    border-left: 5px solid #3700b3; /* Darker purple */
+    font-style: italic;
+    margin: 15px 0;
+    color: #d3d3d3; /* Light color for quotes */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d2d2d; /* Matching footer color */
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
 }
 
-blockquote cite {
-    color: #e0e0e0; /* Light text */
-    font-style: italic;
-}
-
-footer h3, footer h4, footer img {
-    margin-bottom: 10px;
-}
-
-footer img {
-    border-radius: 50%;
-}
-
-/* Newsletter Form */
+/* Form Styles */
 form {
-    background-color: #1e1e1e; /* Dark form background */
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    background-color: #3b3b3b; /* Form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 form label {
-    font-weight: bold;
-    color: #bb86fc; /* Light purple */
-    margin-bottom: 10px;
+    color: #f5f5f5; /* Light color for labels */
 }
 
-form input[type="text"], 
-form input[type="password"], 
-form select, 
-form textarea {
-    width: 100%;
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: calc(100% - 22px); /* Full width minus padding */
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #444; /* Dark border */
-    border-radius: 5px;
-    background-color: #121212; /* Dark input background */
-    color: #e0e0e0; /* Light text */
-}
-
-form input[type="radio"] {
-    margin-right: 10px;
-}
-
-form input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-form input[type="submit"] {
-    background-color: #3700b3; /* Dark purple */
-    color: #e0e0e0; /* Light text */
-    padding: 10px 20px;
+    margin-bottom: 10px;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
+    background-color: #4d4d4d; /* Darker input fields */
+    color: #f5f5f5; /* Light text for inputs */
+}
+
+input[type="submit"] {
+    background-color: #f39c12; /* Button color */
+    color: #1c1c1c; /* Dark text for button */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-form input[type="submit"]:hover {
-    background-color: #bb86fc; /* Light purple */
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1f1f1f; /* Dark footer */
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 2px solid #444; /* Darker border */
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer ul li a {
-    font-size: 1rem;
-    color: #bb86fc; /* Light purple */
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #3700b3; /* Darker purple */
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    #main-content {
-        flex-direction: column;
-    }
-
-    aside {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    article {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1#logo {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    article header h2 {
-        font-size: 1.6rem;
-    }
-
-    footer {
-        padding: 10px;
-    }
+input[type="submit"]:hover {
+    background-color: #e67e22; /* Darker button on hover */
 }
