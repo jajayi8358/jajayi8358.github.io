@@ -1,112 +1,263 @@
-/* background colour is applied to the bodytag*/
-/* this is an example of a type selector */
-body{
-    
-    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    margin: 0px;
-    font-size: 1.5vw
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', sans-serif;
 }
 
-#logo{
-    margin: 0px;
-    padding: 10px;
-    font-family: "Fredoka One", sans-serif;
-    width: 22%;
-
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-ul{
-    margin: 0px;
-}
-
-/* selecting a child of that element */
-body >header {
-    background-color:rgb(192,192, 192) ;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#nav-ul{
-    display: flex;
-}
-
-#nav-ul>li{
-    padding: 5px;
-    margin: 10px;
-}
-
-/* /* the removal of the bullets points */
-
-body > header > nav > ul{
-    list-style: none;
+a {
+    color: #0077b6;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* created a class for the navigation button to apply a style to it, the style applied is the removal and the "link effect" from it and making the text white  */
-.navbtn{  
+a:hover {
+    color: #0096c7;
+}
+
+/* Header Styling */
+header {
+    background-color: #0077b6;
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    border: 2px solid white ;
-    border-radius: 50%;
-}
-
-
-/* This CSS is for the main content moving the article tag and the side next to eacxh other*/
-/* this is automatically alligns the everthing that between the article tags in to the centre */
-
-body > main article {
-    width: 70%;
-    margin: auto;
-}
-
-h2{text-align: center;
-
-}
-
-form{
+    padding: 20px 0;
     text-align: center;
 }
 
-img{
+header h1#logo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0096c7;
+    color: #fff;
+}
+
+/* Main Content */
+#main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+aside h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #0096c7;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+article {
+    flex: 3;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+article header h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+article header h3 {
+    color: #0096c7;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-left: 5px solid #0077b6;
+    margin-top: 20px;
+}
+
+blockquote cite {
+    color: #333;
+    font-style: italic;
+}
+
+footer h3, footer h4, footer img {
+    margin-bottom: 10px;
+}
+
+footer img {
     border-radius: 50%;
 }
 
-#main-content{
-    display: flex;
-    justify-content: space-around;
+/* Newsletter Form */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#main-content> div {
-    width: 70%;
-
-}
-/* FOOTER DESIGN  */
-
-
-body > footer{
-    background-color:rgb(192,192, 192) ;
-    color: whitesmoke;
-    display: flex;
+form label {
+    font-weight: bold;
+    color: #0096c7;
+    margin-bottom: 10px;
 }
 
+form input[type="text"], 
+form input[type="password"], 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
-#footer-ul{
-    display: flex;
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0096c7;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+}
+
+footer ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-    
-#footer-ul> div> li{
-    margin-left: 15px;
-}
-    
-#footer-ul> div> li> a {
+
+footer ul li a {
+    font-size: 1rem;
+    color: #0077b6;
     text-decoration: none;
-    color: white
-
 }
 
+footer ul li a:hover {
+    color: #0096c7;
+}
 
+/* Responsiveness */
+@media (max-width: 768px) {
+    #main-content {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    article {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1#logo {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article header h2 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
